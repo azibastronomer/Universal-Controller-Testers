@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantech Controller Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fantech Controller Lab</h1>
+        <div id="status">PLEASE CONNECT A CONTROLLER AND PRESS ANY BUTTON...</div>
+        
+        <div id="controller-display" class="hidden">
+            <div class="model-info">
+                <span class="model-label">MODEL: </span>
+                <span id="model-name" class="model-value">DETECTING...</span>
+                <button id="vibrate-btn" class="vibe-btn">TEST VIBRATION</button>
+            </div>
+
+            <div class="image-container">
+                <img id="controller-img" src="images/default.png" alt="Controller">
+            </div>
+            
+            <div class="tester-shelf">
+                <div class="tester-column">
+                    <div class="section-title">BUTTONS</div>
+                    <div id="buttons-grid"></div>
+                </div>
+                
+                <div class="tester-column">
+                    <div class="section-title">ANALOG STICKS & DEADZONES</div>
+                    <div class="radar-container">
+                        <div class="radar">
+                            <span class="radar-label">LEFT STICK</span>
+                            <div id="stick-l" class="radar-dot"></div>
+                        </div>
+                        <div class="radar">
+                            <span class="radar-label">RIGHT STICK</span>
+                            <div id="stick-r" class="radar-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
